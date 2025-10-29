@@ -16,3 +16,5 @@ An **Ansible playbook** to bootstrap and configure a fresh Ubuntu server:
 ```ini
 [web]
 your_server ansible_host=1.2.3.4 ansible_user=ubuntu
+
+

@@ -1,12 +1,18 @@
-# ansible-ubuntu-bootstrap
 
-Ansible playbook to bootstrap an Ubuntu host: installs Docker & Nginx, creates a `devops` user, and serves a basic page.
+---
 
-## Run
+## 🧩 **5️⃣ ansible-ubuntu-bootstrap**
+```markdown
+# Ansible Ubuntu Bootstrap
 
-```bash
-# edit inventory.ini with your host
-ansible-playbook playbook.yml -i inventory.ini
-```
+An **Ansible playbook** to bootstrap and configure a fresh Ubuntu server:  
+- Installs Docker and Nginx  
+- Creates a `devops` user  
+- Sets up a sample web page
 
-You may need to provide SSH key or password with `--ask-pass` / `--private-key`.
+---
+
+## 🧱 Inventory Example
+```ini
+[web]
+your_server ansible_host=1.2.3.4 ansible_user=ubuntu
